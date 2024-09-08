@@ -1,3 +1,3 @@
-<div>
-    <!-- Always remember that you are absolutely unique. Just like everyone else. - Margaret Mead -->
-</div>
+<x-layout>
+    <dev> Edit </dev>
+</x-layout>

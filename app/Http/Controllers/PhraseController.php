@@ -21,7 +21,7 @@ class PhraseController extends Controller
      */
     public function create()
     {
-        //
+        return view('phrase.create');
     }
 
     /**
@@ -37,7 +37,7 @@ class PhraseController extends Controller
      */
     public function show(Phrase $phrase)
     {
-        //
+        return view('phrase.show');
     }
 
     /**
@@ -45,7 +45,7 @@ class PhraseController extends Controller
      */
     public function edit(Phrase $phrase)
     {
-        //
+        return view('phrase.edit');
     }
 
     /**
