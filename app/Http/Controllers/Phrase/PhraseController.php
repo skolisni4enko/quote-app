@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Phrase;
 
+use App\Http\Controllers\Controller;
 use App\Models\Phrase;
 use Illuminate\Http\Request;
 

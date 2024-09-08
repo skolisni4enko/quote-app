@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\PhraseController;
+use App\Http\Controllers\Phrase\PhraseController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
