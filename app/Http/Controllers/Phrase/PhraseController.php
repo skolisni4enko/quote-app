@@ -13,8 +13,9 @@ class PhraseController extends Controller
      */
     public function index()
     {
-        $phrases = Phrase::all();
-        return view('phrase.index', compact('phrases'));
+        $randomPhrase = Phrase::inRandomOrder()->first();
+
+        return view('phrase.index', compact('randomPhrase'));
     }
 
     /**

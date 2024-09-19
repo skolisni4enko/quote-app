@@ -1,9 +1,5 @@
 <x-layout>
-    <ul>
-        @foreach($phrases as $phrase)
-            <li>
-                {{ $phrase->text }}
-            </li>
-        @endforeach
-    </ul>
+    <h1 style="color: #ffffff">
+        {{$randomPhrase->text}}
+    </h1>
 </x-layout>

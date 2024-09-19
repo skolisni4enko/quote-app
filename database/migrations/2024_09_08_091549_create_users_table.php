@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->string('role')->default('user'); // Роль пользователя, например, 'user' или 'admin'
+            $table->string('role')->default('user');
             $table->rememberToken();
             $table->timestamps();
         });
@@ -33,11 +33,11 @@ return new class extends Migration
             $table->integer('last_activity')->index();
         });
 
-        // add superadmin
+        // add super admin
         DB::table('users')->insert([
-            'name' => 'SuperAdmin',
-            'email' => 'admin@example.com', // Change "admin@example.com" to your email
-            'password' => Hash::make('password'), // Change 'password' to your password
+            'name' => config('app.super_admin.name'),
+            'email' => config('app.super_admin.email'),
+            'password' => Hash::make(config('app.super_admin.password')),
             'role' => 'admin',
             'created_at' => now(),
             'updated_at' => now(),
